@@ -22,5 +22,24 @@
         <p>Find the sum of all numbers, less than n, whereas n is between 1000 and 1000000, which are palindromic in base 10 and base 2.  Begin by entering a number.</p>
         <p>(Please note that the palindromic number, in either base, may not include leading zeros.)</p>
     </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 1000 and 1000000 (e.g. 1000)" title="Enter whole number between 1000 and 1000000 (e.g. 1000)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-info" onclick="getNumberInfo()">Submit</button>
+                <button type="reset" class="btn btn-warning" onclick="clearInfo()">Reset</button>
+            </article>
+        </form>
+
+        
+    </section>
 </body>
 </html>
