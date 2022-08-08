@@ -18,11 +18,30 @@ function getNumberInfo() {
     document.getElementById("numinfo").innerHTML = txt;
 }
 
-// Function to check if the number n is a palindrome
+/* 
+    Function to check if the number n is a palindrome
+    n can be in base 10 or base 2
+*/
 function isPalindromes(n) {
     const nString = n.toString();
     for (let i=0;i<nString.length / 2;i++) {
         if (nString[i] !== nString[nString.length - i - 1]) return false;
     }
     return true;
+}
+
+/*
+    Function to return the sum of all numbers, less than n, which are palindromic in bose 10 and base 2.
+    doubleBasePalindromes(1000)    returns 1772
+    doubleBasePalindromes(50000)   returns 105795
+    doubleBasePalindromes(500000)  returns 286602
+    doubleBasePalindromes(1000000) returns 872187
+
+*/
+function doubleBasePalindromes(n) {
+    let sum = 0;
+    for (let i=1;i<n;i++) {
+        if (isPalindromes(i) && isPalindromes(i.toString(2))) sum += i;
+    }
+    return sum;
 }
