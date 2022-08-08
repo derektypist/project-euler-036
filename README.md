@@ -43,3 +43,30 @@ taken from [FreeCodeCamp - Coding Interview Prep - Project Euler 036](https://ww
 
 The function `doubleBasePalindromes(n)` returns a number, where `n` is a number between 1000 and 1000000.
 
+## Features
+
+Allows the user to enter a number, as well as getting the sum of all numbers less than the number,
+which are palindromic in base 10 and base 2.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.0 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-036) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
