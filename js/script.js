@@ -11,7 +11,7 @@ function getNumberInfo() {
         // Remove any leading zeros
         num = parseInt(num);
         txt += `You have entered the number ${num}. <p>`;
-        txt += `Sum of all numbers, less then ${num}, which are palindromic in base 10 and base 2 is ${doubleBasePalindromes(num)}`;
+        txt += `Sum of all numbers, less then ${num}, which are palindromic in base 10 and base 2 is ${doubleBasePalindromes(num)}.`;
     }
 
     // Display Information in the Browser
