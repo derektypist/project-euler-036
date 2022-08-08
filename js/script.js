@@ -45,3 +45,9 @@ function doubleBasePalindromes(n) {
     }
     return sum;
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("numinfo").innerHTML = txt;
+}
