@@ -10,7 +10,21 @@ Information at [Project Euler 036](https://projecteuler.net/problem=36)
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 1000 and 1000000 (e.g. 1000) and click on the Submit Button.
+You will see the sum of all numbers less than the number, which are palindromic in base 10 and base 2, unless
+you have made an invalid input.  For example, if you submitted 1000, you would expect to get 1772.
+Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
+
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 1000 or greater than 1000000
+- Entering a number that is not an integer
 
 As a user, I expect the function `doubleBasePalindromes(1000)` to return a number.
 
@@ -22,5 +36,10 @@ As a user, I expect the function `doubleBasePalindromes(500000)` to return 28660
 
 As a user, I expect the function `doubleBasePalindromes(1000000)` to return 872187.
 
-(User Stories on function `doubleBasePalindromes` 
+(User Stories on function `doubleBasePalindromes(n)` 
 taken from [FreeCodeCamp - Coding Interview Prep - Project Euler 036](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-36-double-base-palindromes))
+
+**Information Architecture**
+
+The function `doubleBasePalindromes(n)` returns a number, where `n` is a number between 1000 and 1000000.
+
